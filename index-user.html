@@ -19,8 +19,14 @@
 				<li><a href="listing.html">Du lịch</a></li>
 				<li><a href="user-report.html">Hỗ trợ</a></li>
 			</ul>
-			<div>
-				<a href="#"><img src="images/user-acc.png" class="user-img"></i></a>
+			<div class="user-acc">
+				<button class="click"><img src="images/user-acc.png" class="user-img"></button>
+                <div class="list">
+                    <a href="" class="links">Tài khoản</a> <br>
+                    <a href="" class="links">Tin nhắn</a> <br>
+                    <a href="" class="links">Chuyến đi</a> <br>
+                    <a href="index.html" class="links">Đăng xuất</a>
+                </div>
 				<i class="fas fa-bars" onclick="togglebtn()"></i>
 			</div>
 		</nav>
@@ -191,6 +197,12 @@
 		function togglebtn() {
 			navBar.classList.toggle("hidemenu");
 		}
+
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click",()=>{
+            list.classList.toggle('newlist');
+        });
 	</script>
 
 </body>
