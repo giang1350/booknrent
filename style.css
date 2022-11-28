@@ -112,7 +112,7 @@ nav{
 }
 .list{
 	border: 1px solid black;
-	background-color:aliceblue;
+	background-color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	position: absolute;
@@ -767,7 +767,7 @@ nav.navbar-white .fa-bars{
 }
 .signup-box form{
 	width: 300px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 .signup-box form label{
 	display: flex;
@@ -810,7 +810,7 @@ nav.navbar-white .fa-bars{
 /*----------Login----------*/
 .login-box{
 	width: 360px;
-	height: 280px;
+	height: 300px;
 	margin: 20px auto;
 	border-radius: 3px;
 	background-color: lightgrey;
@@ -821,7 +821,7 @@ nav.navbar-white .fa-bars{
 }
 .login-box form{
 	width: 300px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 .login-box form label{
 	display: flex;

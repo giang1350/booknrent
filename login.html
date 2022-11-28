@@ -32,9 +32,11 @@
 			<input type="password" id="password" name="password" placeholder="Nhập Mật khẩu">
 
 			<input type="button" id="login" value="Đăng Nhập" name="login-submit">
+
+			<p style="text-align: right;"><a href="#" class="forget-password">Quên mật khẩu?</a></p>
 		</form>
 	</div>
-	<p class="para-2">Bạn chưa có tài khoản? <a href="signup.html">Đăng ký</a> </p>
+	<p class="para-2">Bạn chưa có tài khoản? <a href="signup.html">Tạo tài khoản tại đây.</a> </p>
 
 	<div class="container">
 		<div class="footer">
@@ -118,17 +120,10 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    //bla bla bla
-    // ...
   } else {
     // User is signed out
-    // ...
-    //bla bla bla
   }
 });
-
-
-
 </script>
 
 </html>
