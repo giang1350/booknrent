@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin - Đăng nhập</title>
+	<link rel="icon" href="images/icon.png">
+  	<link rel="stylesheet" type="text/css" href="style-login.css">
+  	<script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<img class="logo" src="images/logo-1.png">
+	<h1 class="header">Chào mừng bạn đến trang quản lý của BooknRent</h1>
+	<div class="container">
+		<h1 class="label">Đăng nhập</h1>
+		<form class="login_form">
+			<div class="font">Tên đăng nhập</div>
+			<input id="name" type="text" onkeyup="validateName()">
+			<div id="name_error"></div>
+
+			<div class="font2">Mật khẩu</div>
+			<input id="password" type="password" onkeyup="validatePassword()">
+			<div id="pass_error"></div>
+
+			<button onclick="return validateForm()" type="submit">Đăng nhập</button>
+			<div id="submit_error"></div>
+		</form>
+
+	</div>
+
+	<script>
+		var nameError = document.getElementById('name_error');
+		var passError = document.getElementById('pass_error');
+		var submitError = document.getElementById('submit_error');
+
+		function validateName(){
+			var name = document.getElementById('name').value;
+
+			if (name.length >= 0 && name.length <= 5) {
+				nameError.innerHTML = "Tên đăng nhập chưa đầy đủ";
+				return false;
+			}
+
+			nameError.innerHTML = "Đã xác nhận";
+			return true;
+		}
+
+		function validatePassword(){
+			var password = document.getElementById('password').value;
+
+			if (password.length >= 0 && password.length <= 5) {
+				passError.innerHTML = "Mật khẩu chưa đầy đủ";
+				return false;
+			}
+
+			passError.innerHTML = "Đã xác nhận";
+			return true;
+		}
+
+		function validateForm(){
+			if (validateName() && validatePassword()){
+				submitError.style.display = "block";
+				submitError.innerHTML = "Đã đăng nhập thành công!";
+				
+
+				window.location.href = "admin-index.html";
+
+				return false;
+			}
+
+			else{
+				submitError.style.display = "block";
+				submitError.innerHTML = "Vui lòng điền lại thông tin!"
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chào mừng đến trang Admin của BooknRent</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" type="text/css" href="style-admin.css">
+  <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+        <ul>
+          <li>
+            <a href="admin-index.html">
+              <i class="fas fa-clinic-medical"></i>
+              <div class="title">BooknRent</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-index.html">
+              <i class="fas fa-th-large" style="color: black;"></i>
+              <div class="title" style="color: black">Trang chủ</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-customer.html">
+              <i class="fa-solid fa-user"></i>
+              <div class="title">Khách</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-owner.html">
+              <i class="fa-solid fa-house-user"></i>
+              <div class="title">Chủ thuê</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-room.html">
+              <i class="fa-solid fa-house"></i>
+              <div class="title">Phòng</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-post.html">
+              <i class="fa-solid fa-newspaper"></i>
+              <div class="title">Bài viết</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-question"></i>
+              <div class="title">Hỗ trợ</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <div class="title">Cài đặt</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-profile.html">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <div class="title">Thông tin</div>
+            </a>
+          </li>
+          <li>
+            <a href="admin-login.html">
+              <i class="fa-solid fa-door-open"></i>
+              <div class="title">Đăng xuất</div>
+            </a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <input type="text" name="search" placeholder="Tìm kiếm">
+          <label for="search"><i class="fas fa-search"></i></label>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <img src="images/user-acc.png">
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <div class="number">500</div>
+            <div class="card-name">Bài viết</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">500</div>
+            <div class="card-name">Khách hàng</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">100</div>
+            <div class="card-name">Chủ thuê</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-house-user"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">100</div>
+            <div class="card-name">Phòng</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-house"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="tables">
+        <div class="last-customers">
+          <div class="heading">
+            <h2>Khách hàng</h2>
+            <a href="#" class="btn">Xem thêm</a>
+          </div>
+
+          <table class="customer">
+            <thead>
+              <td>Họ tên</td>
+              <td>Chủ thuê</td>
+              <td>Tên phòng</td>
+              <td>Chỉnh sửa</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nguyễn Văn Anh</td>
+                <td>Nguyễn Hương Lan</td>
+                <td>Phòng của Lan</td>
+                <td>
+                  <i class="far fa-eye"></i>
+                  <i class="far fa-edit"></i>
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Trần Tuấn Phong</td>
+                <td>David Trần</td>
+                <td>Nhà của David</td>
+                <td>
+                  <i class="far fa-eye"></i>
+                  <i class="far fa-edit"></i>
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Phạm Hương Trà</td>
+                <td>Lê Thị Tú</td>
+                <td>Phòng của Tú</td>
+                <td>
+                  <i class="far fa-eye"></i>
+                  <i class="far fa-edit"></i>
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Trần Ngọc Tuấn</td>
+                <td>Nguyễn Ngọc Hùng</td>
+                <td>Nhà của Hùng</td>
+                <td>
+                  <i class="far fa-eye"></i>
+                  <i class="far fa-edit"></i>
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Ngô Vân Anh</td>
+                <td>Trần Đức Mạnh</td>
+                <td>Phòng của Mạnh</td>
+                <td>
+                  <i class="far fa-eye"></i>
+                  <i class="far fa-edit"></i>
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+
+        <div class="last-owners">
+          <div class="heading">
+            <h2>Chủ thuê</h2>
+            <a href="#" class="btn">Xem thêm</a>
+          </div> 
+          <table class="owner">
+            <thead>
+              <td>Ảnh đại diện</td>
+              <td>Họ tên</td>
+              <td>Tên đăng nhập</td>
+              <td>Chi tiết</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="images/user-acc.png">
+                  </div>
+                </td>
+                <td>Cao Hữu Bình</td>
+                <td>binhch95</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="images/user-acc.png">
+                  </div>
+                </td>
+                <td>Trần Xuân Sơn</td>
+                <td>sontx1578</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="images/user-acc.png">
+                  </div>
+                </td>
+                <td>Đỗ Chiến Thắng</td>
+                <td>thangdo1996</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="images/user-acc.png">
+                  </div>
+                </td>
+                <td>Vũ Phương Lan</td>
+                <td>lanphuongvu123</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="img-box-small">
+                    <img src="images/user-acc.png">
+                  </div>
+                </td>
+                <td>Vũ Hương Trang</td>
+                <td>tranglove134</td>
+                <td><i class="far fa-eye"></i></td>
+              </tr>
+        
+            </tbody>
+          </table> 
+        </div>
+      </div>
+    </div>
+
+  <script>
+
+  </script>
+
+</body>
+</html>
