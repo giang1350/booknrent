@@ -14,7 +14,7 @@ body{
 	width: 100%;
 }
 
-/*Index*/
+/* Menu */
 .sidebar{
 	position: fixed;
 	width: 300px;
@@ -45,9 +45,9 @@ body{
 	background: none;
 }
 
-.sidebar ul li:nth-child(2){
+/* .sidebar ul li:nth-child(2){
 	background-color: #fff;
-}
+} */
 
 .sidebar ul li a{
 	width: 100%;
@@ -69,9 +69,9 @@ body{
 	font-size: 20px;
 }
 
-.sidebar ul li a i:nth-child(2){
+/* .sidebar ul li a i:nth-child(2){
 	color: black;
-}
+} */
 
 .main{
 	position: absolute;
@@ -81,6 +81,7 @@ body{
 	background: #f5f5f5;
 }
 
+/* Top bar */
 .top-bar{
 	position: fixed;
 	height: 60px;
@@ -96,6 +97,7 @@ body{
 	z-index: 1;
 }
 
+/* Search */
 .top-bar .search{
 	position: relative;
 	max-width: 400px;
@@ -119,6 +121,7 @@ body{
 	cursor: pointer;
 }
 
+/* User photo */
 .user{
 	position: relative;
 	width: 50px;
@@ -134,6 +137,7 @@ img{
 	object-fit: cover;
 }
 
+/* Index */
 .cards{
 	margin-top: 60px;
 	width: 100%;
@@ -271,6 +275,7 @@ td i{
 	}
 }
 
+/* Index for small device */
 @media(max-width:860px){
 	.cards{
 		grid-template-columns: repeat(2, 1fr);
@@ -307,4 +312,4 @@ td i{
 	}
 }
 
-/*Log in*/
+/* Table for customer, owner */
