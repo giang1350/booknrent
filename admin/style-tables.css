@@ -215,6 +215,28 @@ img{
     text-decoration: none;
 }
 
+.room-table td .btn2{
+    justify-content: center;
+    padding: 2px 5px;
+    background-color: lightcoral;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.room-table td .btn3{
+    justify-content: center;
+    padding: 2px 5px;
+    background-color: lightgreen;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 /* Post */
 .post-table{
     border: 2px solid black;
