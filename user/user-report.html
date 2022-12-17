@@ -54,8 +54,19 @@
 			<label>Nội dung</label>
 			<input class="area" type="textarea" name="">
 
-			<input type="submit" value="Báo cáo">
+			<button type="button" class="submit" onclick="openPopup()">Báo cáo</button>
 		</form>
+
+		<!-- Thông báo đã gửi -->
+		<div class="complete" id="popup">
+			<div class="headerc">
+				<h2>THÀNH CÔNG</h2>
+				<label for="click" class="fas fa-times" onclick="closePopup()"></label>
+			</div>
+			<label for="click" class="fa-solid fa-check"></label>
+			<p>Đã gửi thành công!</p>
+		</div>
+		
 	</div>
 	<p class="para-3">Bạn có thể hỗ trợ bằng cách liên hệ: <a href="#">0974 2598 48</a></p>
 	<p class="para-3">hoặc email: <a href="#">cskh@bookntent.com</a></p>
@@ -83,6 +94,17 @@
         click.addEventListener("click",()=>{
             list.classList.toggle('newlist');
         });
+
+		// Popup
+		let popup = document.getElementById("popup");
+
+		function openPopup(){
+			popup.classList.add("open-complete");
+		}
+
+		function closePopup(){
+			popup.classList.remove("open-complete");
+		}
 	</script>
 </body>
 </html>
