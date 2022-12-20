@@ -1130,3 +1130,53 @@ input[type="button"] {
     font-size: 15px;
     text-decoration: none;
 }
+
+/* Home done */
+.house-done{
+	width: 800px;
+	height: 380px;
+	margin: 30px auto;
+	border-top-left-radius: 10px;
+	border: 5px solid #333;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #FFF;
+}
+
+.fa-square-check{
+	font-size: 80px;
+	color: dodgerblue;
+	font-weight: bold;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	padding-top: 13px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin: 30px 0 0 350px;
+}
+
+.house-done h2{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.house-done p{
+	margin: 20px 0px 30px 0px;
+	text-align: center;
+}
+
+.homebutton{
+	border: 2px solid black;
+	margin-left: 310px;
+    padding: 5px 5px;
+    background-color: dodgerblue;
+    color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
