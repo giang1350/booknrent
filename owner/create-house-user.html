@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BooknRent - Chi tiết phòng</title>
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav id="navBar" class="navbar-white">
+		<a href="index-user.html">
+			<img src="images/logo-3.png" class="logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="#">Hôm nay</a></li>
+			<li><a href="#">Lịch</a></li>
+			<li><a href="#">Hộp thư đến</a></li>
+			<li><a href="#">Thông tin phân tích</a></li>
+			<li>
+				<a href="#">Menu</a>
+				<ul class="dropdown">
+					<li><a class="dropdown-item" href="index.html">Nhà/Phòng Cho Thuê</a></li>
+					<li><a class="dropdown-item" href="create-house-user.html">Tạo mục cho thuê mới</a></li>
+					<li><a class="dropdown-item" href="#">Sách Hướng Dẫn</a></li>
+					<li><a class="dropdown-item" href="#">Lịch Sử Giao Dịch</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="user-acc">
+            <button class="click"><img src="images/user-acc.png" class="user-img"></button>
+            <div class="list">
+                <a href="" class="links">Tài khoản</a> <br>
+                <a href="" class="links">Tin nhắn</a> <br>
+                <a href="" class="links">Chuyến đi</a> <br>
+                <a href="index.html" class="links">Đăng xuất</a>
+            </div>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </div>
+	</nav>
+
+	<div class="creat-box">
+        <span class="title-create">Hân hạnh chào đón Ngọc Bảo!</span>
+        <span class="title-create1">Đặt phòng/đặt chỗ của bạn</span>
+
+        <div class="room-form">
+            <table class="room-table">
+                <tr>
+                    <td><label>Ảnh</label></td>
+                    <td><input type="file" id="img-room" name="img-room" placeholder="Nhập tên phòng"></td>
+                  </tr>
+
+                <tr>
+                    <td><label>Tên phòng</label></td>
+                    <td><input type="text" id="name-room" name="name-room" placeholder="Nhập tên phòng"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Địa điểm</label></td>
+                    <td>
+                        <select name="diadiem">
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hải Phòng</option>
+                            <option value="hanoi">Thành Phố HCM</option>
+                            <option value="hanoi">...</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Giá cả</label></td>
+                    <td><input type="text" id="price" name="price" placeholder="Nhập giá phòng"> <span>VNĐ / Ngày</span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Số người thuê</label></td>
+                    <td><input type="text" id="customer" name="customer" placeholder="Nhập số người thuê"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Loại phòng</label></td>
+                    <td>
+                        <select name="sophong">
+                            <option value="hanoi">1 Phòng ngủ</option>
+                            <option value="hanoi">2 Phòng ngủ</option>
+                        </select>  
+                        <select name="sophong">
+                            <option value="hanoi">1 Phòng tắm</option>
+                            <option value="hanoi">2 Phòng tắm</option>
+                        </select>   
+                        <select name="sophong">
+                            <option value="hanoi">1 Phòng bếp</option>
+                            <option value="hanoi">2 Phòng bếp</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Ngày đến</label></td>
+                    <td><input type="datetime-local" name="dayin"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Ngày đi</label></td>
+                    <td><input type="datetime-local" name="dayout"></td>
+                </tr>
+                </table>
+                <input class="abc" type="button" id="login" value="Đăng tải" name="create-submit">
+        </div>
+    </div>
+
+		
+	<div class="container">
+		<div class="footer">
+			<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+			<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+			<hr>
+			<p>Copyright © 2022</p>
+		</div>
+	</div>
+
+	<script>
+		var navBar = document.getElementById("navBar");
+
+		function togglebtn() {
+			navBar.classList.toggle("hidemenu");
+		}
+
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click",()=>{
+            list.classList.toggle('newlist');
+        });
+	</script>
+</body>
+</html>
