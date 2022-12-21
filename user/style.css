@@ -1178,5 +1178,31 @@ input[type="button"] {
     text-decoration: none;
 }
 
+/* Payment */
+.payment h2{
+	margin: 50px 0px 0px 50px;
+}
 
+.sub-payment{
+	margin-left: 50px;
+}
 
+.sub-sub-pay{
+	padding: 20px 0px;
+	border-bottom: 5px solid black;
+}
+
+.nutxacnhan{
+	margin-top: 30px;
+}
+.check-btn{
+	text-decoration: none;
+	padding: 10px 20px;
+	width: 200px;
+	background: dodgerblue;
+	border: none;
+	border-radius: 5px;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
