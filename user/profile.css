@@ -149,7 +149,7 @@ nav{
 	width: 200px;
 	height: 200px;
     float: left;
-    margin-left: 250px;
+    margin-left: 320px;
     margin-right: 50px;
 }
 
@@ -175,6 +175,16 @@ nav{
 
 .prf-table tr td:first-child{
     width: 200px;
+}
+
+.prf-table input[type="text"]{
+	width: 300px;
+	height: 30px;
+}
+
+.prf-table input[type="datetime"]{
+	width: 300px;
+	height: 30px;
 }
 
 .btn{

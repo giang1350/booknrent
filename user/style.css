@@ -1179,17 +1179,40 @@ input[type="button"] {
 }
 
 /* Payment */
+.new-payment{
+	display: flex;
+}
+
 .payment h2{
-	margin: 50px 0px 0px 50px;
+	margin: 50px 0px 0px 100px;
 }
 
 .sub-payment{
-	margin-left: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.sub-payment:nth-child(2){
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 20px 20px;
+	height: 650px;
 }
 
 .sub-sub-pay{
 	padding: 20px 0px;
-	border-bottom: 5px solid black;
+	border-bottom: 2px solid black;
+}
+
+.sub-sub-pay:last-child{
+	padding: 20px 0px;
+	border: none;
+}
+
+.sub-sub-pay1{
+	display: flex;
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
 }
 
 .nutxacnhan{
@@ -1205,4 +1228,56 @@ input[type="button"] {
 	color: #FFF;
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
+}
+
+/* Payment Table */
+.paycheck-form{
+	margin-top: 10px;
+}
+
+.paycheck-table tr td{
+	font-size: 15px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+	
+.paycheck-table tr td:first-child{
+	width: 250px;
+}
+
+.select-form{
+	width: 300px;
+}
+
+.paycheck-table input[type="text"]{
+	width: 300px;
+}
+
+/* Inforamtion Table */
+.information-table{
+	margin-top: 10px;
+}
+
+.information-table tr td{
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+	
+.information-table tr td:first-child{
+	width: 500px;
+}
+
+
+/* Price Table */
+.price-table{
+	margin-top: 10px;
+}
+
+.price-table tr td{
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+	
+.price-table tr td:first-child{
+	width: 390px;
 }
