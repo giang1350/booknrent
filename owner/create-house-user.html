@@ -15,14 +15,14 @@
 		</a>
 		<ul class="nav-links">
 			<li><a href="#">Trang chủ</a></li>
-			<li><a href="#">Hôm nay</a></li>
+			<li><a href="index-today-owner.html">Hôm nay</a></li>
 			<li><a href="#">Lịch</a></li>
-			<li><a href="#">Hộp thư đến</a></li>
+			<li><a href="hopthuden.html">Hộp thư đến</a></li>
 			<li><a href="#">Thông tin phân tích</a></li>
 			<li>
 				<a href="#">Menu</a>
 				<ul class="dropdown">
-					<li><a class="dropdown-item" href="index.html">Nhà/Phòng Cho Thuê</a></li>
+					<li><a class="dropdown-item" href="index-today-owner.html">Nhà/Phòng Cho Thuê</a></li>
 					<li><a class="dropdown-item" href="create-house-user.html">Tạo mục cho thuê mới</a></li>
 					<li><a class="dropdown-item" href="#">Sách Hướng Dẫn</a></li>
 					<li><a class="dropdown-item" href="#">Lịch Sử Giao Dịch</a></li>
@@ -107,8 +107,18 @@
                     <td><input type="datetime-local" name="dayout"></td>
                 </tr>
                 </table>
-                <input class="abc" type="button" id="login" value="Đăng tải" name="create-submit">
+                <input class="abc" type="button" id="login" value="Đăng tải" name="create-submit" onclick="openPopup()">
         </div>
+
+        <!-- Thông báo đã gửi -->
+		<div class="complete" id="popup">
+			<div class="headerc">
+				<h2>THÀNH CÔNG</h2>
+				<label for="click" class="fas fa-times" onclick="closePopup()"></label>
+			</div>
+			<label for="click" class="fa-solid fa-check"></label>
+			<p>Đã đăng bài thành công!</p>
+		</div>
     </div>
 
 		
@@ -135,6 +145,17 @@
         click.addEventListener("click",()=>{
             list.classList.toggle('newlist');
         });
+
+        // Popup
+		let popup = document.getElementById("popup");
+
+		function openPopup(){
+			popup.classList.add("open-complete");
+		}
+
+		function closePopup(){
+			popup.classList.remove("open-complete");
+		}
 	</script>
 </body>
 </html>
