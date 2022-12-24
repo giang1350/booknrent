@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BooknRent - Chi tiết phòng</title>
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav id="navBar" class="navbar-white">
+		<a href="/user/index-user.html">
+			<img src="images/logo-3.png" class="logo">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="index-today-owner.html">Hôm nay</a></li>
+			<li><a href="#">Lịch</a></li>
+			<li><a href="hopthuden.html">Hộp thư đến</a></li>
+			<li><a href="#">Thông tin phân tích</a></li>
+			<li>
+				<a href="#">Menu</a>
+				<ul class="dropdown">
+					<li><a class="dropdown-item" href="index-today-owner.html">Nhà/Phòng Cho Thuê</a></li>
+					<li><a class="dropdown-item" href="help-desk.html">Tạo mục cho thuê mới</a></li>
+					<li><a class="dropdown-item" href="#">Sách Hướng Dẫn</a></li>
+					<li><a class="dropdown-item" href="#">Lịch Sử Giao Dịch</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="user-acc">
+            <button class="click"><img src="images/user-acc.png" class="user-img"></button>
+            <div class="list">
+                <a href="/user/profile.html" class="links">Tài khoản</a> <br>
+                <a href="" class="links">Tin nhắn</a> <br>
+                <a href="" class="links">Chuyến đi</a> <br>
+                <a href="/user/index.html" class="links">Đăng xuất</a>
+            </div>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </div>
+	</nav>
+
+	<div class="creat-box">
+
+        <span class="title-create">Hân hạnh chào đón Ngọc Bảo!</span>
+
+        <span class="title-create1">Đặt phòng/đặt chỗ của bạn</span>
+        
+        <div class="subject">
+            <span class="bodder1">Sắp trả phòng (0)</span>
+
+            <span class="bodder1">Hiện đang đón tiếp (0)</span>
+
+            <span class="bodder1">Sắp đến (0)</span>
+
+            <span class="bodder1">Sắp tới (0)</span>
+
+            <span class="bodder1">Đánh giá đang chờ xử lý (0)</span>
+        </div>
+
+        <form>
+            <div class="form-check">
+                <span><i class="fa-solid fa-clipboard-check"></i></span>
+                <br>
+                <span class="display-check">You don’t have any guests checking out today or tomorrow.</span>
+            </div>
+        </form>
+
+        <span class="title-small">Chúng tôi luôn sẵn sàng trợ giúp</span>
+
+        <div class="box-contact">
+            <div class="hotline-box">
+                <span><i class="fa-solid fa-user"></i></span>
+                <span class="title-box"><b>Hướng dẫn từ một Chủ nhà siêu cấp</b></span>
+                <br>
+                <span class="content-box">Chúng tôi sẽ kết nối bạn với một Chủ nhà giàu kinh nghiệm để giúp bạn bắt đầu.</span>
+            </div>
+            <div class="hotline-box">
+                <span><i class="fa-solid fa-phone-volume"></i></span>
+                <span class="title-box"><b>Liên hệ bộ phận hỗ trợ đặc biệt</b></span>
+                <br>
+                <span class="content-box">Là Chủ nhà mới, bạn có thể liên hệ với nhóm hỗ trợ đã được đào tạo đặc biệt chỉ với một vài thao tác.</span>
+            </div>
+        </div>
+
+        <span class="title-small">Tài nguyên và mẹo</span>
+
+        <div class="subject-box">
+            <div class="subject-1">
+                <img src="images/subject1.png" alt="">
+                <br>
+                <a href="#"><p>Các tạo danh sách du lịch một cách tiện lợi, dễ dàng</p></a>
+            </div>
+            <div class="subject-1">
+                <img src="images/subject2.png" alt="">
+                <br>
+                <a href="#"><p>Cách tạo phòng dễ dàng</p></a>
+            </div>
+            <div class="subject-1">
+                <img src="images/subject3.png" alt="">
+                <br>
+                <a href="#"><p>Cách chuẩn bị và trang trí phòng cho khách</p></a>
+            </div>
+            <div class="subject-1">
+                <img src="images/subject5.png" alt="">
+                <br>
+                <a href="#"><p>Cách viết mô tả có thu hút</p></a>
+            </div>
+        </div>
+
+    </div>
+
+		
+	<div class="container">
+		<div class="footer">
+			<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+			<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+			<hr>
+			<p>Copyright © 2022</p>
+		</div>
+	</div>
+
+	<script>
+		var navBar = document.getElementById("navBar");
+
+		function togglebtn() {
+			navBar.classList.toggle("hidemenu");
+		}
+
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click",()=>{
+            list.classList.toggle('newlist');
+        });
+	</script>
+</body>
+</html>

@@ -39,6 +39,7 @@ nav{
 	font-size: 14px;
 }
 .container{
+	margin-top: 20px;
 	padding: 0 7%;
 }
 
@@ -86,6 +87,27 @@ nav{
 }
 .search-bar form label{
 	font-weight: 600;
+}
+
+.dropdown{
+	width: 300px;
+	background: #fff;
+	position: absolute;
+	margin-left: -33px;
+	z-index: 999;
+	display: none;
+}
+
+.dropdown li{
+	display: block;
+}
+
+ul.dropdown li:hover{
+	background-color: #ccc;
+}
+
+ul li:hover > ul.dropdown{
+	display: block;
 }
 
 /* ----------User Account----------*/
@@ -852,7 +874,8 @@ nav.navbar-white .fa-bars{
 }
 
 input[type="button"] {
-	margin-top: 23px;
+	margin-top: 28px;
+	margin-left: 100px;
 	width: 120px;
 	height: 32px;
 	background: #16a085;
@@ -977,7 +1000,6 @@ input[type="button"] {
 	display: flex;
 }
 
-/* Help Desk */
 .body_page{
 	width: 1500px;
 	padding: 7% 12% 2% 32%;
@@ -1005,7 +1027,6 @@ li .title_user{
 .fa-chevron-right{
 	float: right;
 }
-
 .boder{
 	padding: 8px;
 	height: 80px;
@@ -1022,182 +1043,184 @@ li .title_user{
 	padding-right: 10x;
 }
 
-/* Create house user */
 .creat-box .title-create{
 	width: 1500px;
-	padding: 5% 5% 1% 20%;
-	margin: 10 10 5 10;
+	padding: 3% 0% 0% 20%;
 	display: flex;
 	font-size: 30px;
 	font-family: 'poppins', sans-serif;
 }
 .creat-box .title-create1{
 	width: 1500px;
-	padding: 1% 5% 1% 20%;
+	padding: 1% 1% 0% 20%;
 	margin: 10 10 5 10;
 	display: flex;
-	font-size: 22px;
+	font-size: 25px;
 	font-family: 'poppins', sans-serif;
 }
 
-.new-room{
-	text-decoration: none;
-	color: #000;
+.creat-box form{
+	width: 800px;
+	height: 460px;
+	margin: 30px 350px;
+	border-top-left-radius: 20px;
+	border: 1px solid #333;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: lightgrey;
 }
 
-.dropdown{
-	width: 300px;
-	background: #fff;
-	position: absolute;
-	margin-left: -33px;
-	z-index: 999;
-	display: none;
-}
-
-.dropdown li{
-	display: block;
-}
-
-ul.dropdown li:hover{
-	background-color: #ccc;
-}
-
-ul li:hover > ul.dropdown{
-	display: block;
+.creat-box form ul li{
+	font-family: 'Courier New', Courier, monospace;
+	list-style: none;
+	font-weight: 500;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-left: 100px;
 }
 
 label{
 	padding-right: 10px;
 }
 
-.login-box form input[type="button"]{
+.creat-box form input[type="button"]{
 	width: 300px;
-	height: 35px;
-	margin-top: 20px;
-	margin-left: 30px;
+	height: 55px;
+	margin-top: 10px;
+	margin-left: 130px;
 	border: none;
 	background-color: dodgerblue;
 	color: #fff;
 	font-size: 18px;
+	border-radius: 15px;
 }
 
-/* Room form */
-.room-form{
-	width: 500px;
-	height: 380px;
-	margin: 30px auto;
-	border-top-left-radius: 10px;
+.input1{
+	margin-left: 35px;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+}
+.input2{
+	margin-left: 65px;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+}
+.input3{
+	margin-left: 8px;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.select1{
+	margin-left: 45px;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+}
+.select2{
+	margin-left: 30px;
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.datetime1{
+	margin-left: 40px;
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+}
+.datetime2{
+	margin-left: 55px;
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.bodder1{
+	padding: 10px 10px 10px 10px;
+	border-radius: 30px;
 	border: 1px solid #333;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background-color: lightgrey;
+	margin-left: 20px;
+}
+.subject{
+	width: 1500px;
+	padding: 2% 0% 0% 20%;
 }
 
-.room-form tr td{
-	font-family: 'Courier New', Courier, monospace;
-	list-style: none;
-	font-weight: 500;
-	font-size: 16px;
-	padding-top: 20px;
-	padding-left: 20px;
+form .form-check{
+	width: 200px;
+	margin-top: 150px;
+	margin-left: 300px;
 }
-
-.abc{
-	margin-left: 180px;
+.fa-clipboard-check{
+	width: 50px;
+	color: #a37367;
+	size: 50px;
 }
-
-/* Report complete notification */
-.complete{
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: transform 0.4s, top 0.4s;
-}
-
-.complete{
-	visibility: hidden;
-	width: 400px;
-	height: 250px;
-	background: white;
-	border-radius: 3px;
-	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
-}
-
-.open-complete{
-	visibility: visible;
-	transform: translate(-50%, -50%) scale(1);
-}
-
-.complete .headerc{
-	height: 68px;
-	background-color: dodgerblue;
-	overflow: hidden;
-	border-radius: 3px 3px 0 0;
-	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
-}
-
-.headerc h2{
-	margin-top: 20px;
-	color: #fff;
-	padding-left: 32px;
-	font-weight: normal;
-}
-
-.fa-times{
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	color: #e8f7fc;
-	font-size: 20px;
-	font-weight: bold;
-	cursor: pointer;
-}
-
-.fa-check{
+.fa-solid{
 	font-size: 50px;
-	color: dodgerblue;
-	font-weight: bold;
-	height: 80px;
-	width: 80px;
-	border: 2px solid dodgerblue;
+	margin-left: 10px;
+}
+.form-check span{
+	font-size: 20px;
+}
+
+.title-small{
+	width: 1500px;
+	padding: 4% 3% 1% 20%;
+	font-size: 25px;
+}
+
+.box-contact{
+	padding: 2% 1% 1% 18%;
+	display: flex;
+}
+.hotline-box{
+	margin-left: 20px;
+	border-radius: 30px;
+	border: 1px solid #333;
+	width: 460px;
+	padding: 10px 10px 10px 10px;
+}
+.title-box{
+	font-style: inherit;
+	font-size: 20px;
+	font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.subject-box{
+	margin-top: 10px;
+	display: flex;
+	padding: 1% 0% 0% 16%;
+	width: 1500px;
+}
+.subject-1 img{
+	width: 250px;
+	height: 150px;
+	margin-bottom: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.subject-1 a{
+	text-decoration: none;
+	color: black;
+}
+
+.subject-1 p{
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
-	padding-top: 13px;
-	border-radius: 50%;
-	box-sizing: border-box;
-	margin: 30px 0 0 160px;
+	margin-bottom: 20px;
+	font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.complete p{
-	padding-top: 10px;
-	font-size: 19px;
-	color: #1a1a1a;
-	text-align: center;
-}
-
-.smallline{
-	position: absolute;
-	bottom: 60px;
-	width: 100%;
-	height: 1px;
-	background: silver;
-}
-
-.close-btn{
-	position: absolute;
-	bottom: 12px;
-	right: 25px;
-	border: 1px solid dodgerblue;
-	border-radius: 3px;
-	color: dodgerblue;
-	padding: 8px 10px;
-	font-size: 18px;
-	cursor: pointer;
-}
-
-.close-btn:hover{
-	background: rgb(30, 133, 244);;
-	color: #fff;
-	transition: .5s;
+.subject-1{
+	margin-right: 20px;
+	width: 250px;
+	border-radius: 20px;
+	border: 1px solid gray;
 }
